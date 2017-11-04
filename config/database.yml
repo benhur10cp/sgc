@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  username: postgres
+  password: be1be2be3
+
+development:
+  <<: *default
+  database: sgc_development
+
+test:
+  <<: *default
+database: sgc_test

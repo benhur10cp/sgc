@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema Gerenciamento Comercial</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<% if member_signed_in? %>
+    <%= render "layouts/nav_bar", layout: "application" %>
+<%#= render "layouts/sidebar", layout: "application" %>
+    <%= render "layouts/sidebar2", layout: "application" %>
+<% end %>
+<br>
+<%= yield %>
+</body>
+</html>
