@@ -1,0 +1,50 @@
+<div class="row">
+
+
+  <%= form_with(model: [:site, registro_caixa], local: true) do |form| %>
+      <form>
+        <% if registro_caixa.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(registro_caixa.errors.count, "error") %> Não foi possível salvar o registro: </h2>
+
+              <ul>
+                <% registro_caixa.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+
+        <div class="form-group">
+          <%= form.label :descricao %>
+          <%= form.text_field :descricao, class: 'form-control' %>
+        </div>
+
+
+        <div class="form-group">
+          <%= form.label :valor %>
+          <%#= form.number_field :valor %>
+          <%= form.text_field :valor, id: 'currency', class: 'form-control' %>
+        </div>
+
+
+        <div class="form-group">
+          <%= form.label :tipo_movimentacao_id %>
+          <%= form.select :tipo_movimentacao_id, options_for_select(@tipos_movimentacao.map {|tipo| [tipo.nm_movimentacao, tipo.id]}, (params[:livro_caixa] && params[:livro_caixa][:tipo_movimentacao_id] ? params[:livro_caixa][:tipo_movimentacao_id] : nil)), {:prompt => 'Selecione um tipo'}, {class: 'form-control'} %>
+        </div>
+
+        <div class="form-group">
+          <%= link_to 'Voltar', site_livro_caixas_path, class: 'btn btn-danger' %>
+          <%= form.submit 'Criar Novo', class: 'btn btn-info' %>
+        </div>
+      </form>
+  <% end %>
+
+
+</div>
+
+<script>
+    $(function () {
+        $('#currency').maskMoney({thousands: '.', decimal: ',', allowZero: false, allowEmpty: false, precision: 2});
+    })
+</script>

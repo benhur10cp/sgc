@@ -9,11 +9,6 @@
 </head>
 
 <body>
-<% if member_signed_in? %>
-    <%= render "layouts/nav_bar", layout: "application" %>
-<%#= render "layouts/sidebar", layout: "application" %>
-    <%= render "layouts/sidebar2", layout: "application" %>
-<% end %>
 <br>
 <%= yield %>
 </body>
