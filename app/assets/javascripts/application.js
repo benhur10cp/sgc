@@ -13,13 +13,13 @@
 //= require jquery
 //= require tether
 //= require jquery_ujs
+//= require bootstrap
 //= require bootstrap_sb_admin_base_v2
 //= require turbolinks
 //= require bootstrap-datepicker
 //= require_tree .
 //= require bootstrap.growl
 //= require bootbox
-//= require bootstrap
 //= require jquery.maskMoney.min
 
 
