@@ -10704,3 +10704,406 @@ Processing by Site::LivroCaixasController#index as HTML
 Completed 200 OK in 152ms (Views: 146.5ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:15:57 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.6ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (17.7ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (19.3ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.8ms)
+Completed 200 OK in 158ms (Views: 154.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/site/livro_caixas?page=5" for 127.0.0.1 at 2017-11-20 22:16:01 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.1ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 40]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (40.2ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (43.0ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.3ms)
+Completed 200 OK in 182ms (Views: 174.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/site/livro_caixas?page=11" for 127.0.0.1 at 2017-11-20 22:16:03 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"page"=>"11"}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 100]]
+  Rendered site/livro_caixas/_lista_grid.html.erb (20.0ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (22.3ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.8ms)
+Completed 200 OK in 150ms (Views: 143.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:16:04 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.6ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (26.7ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (28.7ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.0ms)
+Completed 200 OK in 241ms (Views: 235.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/site/livro_caixas?page=5" for 127.0.0.1 at 2017-11-20 22:16:06 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (2.9ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 40]]
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (32.0ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (33.8ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.9ms)
+Completed 200 OK in 290ms (Views: 281.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/site/livro_caixas?page=5" for 127.0.0.1 at 2017-11-20 22:18:00 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.6ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 40]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (38.2ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (43.7ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.0ms)
+Completed 200 OK in 269ms (Views: 260.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/site/livro_caixas?page=9" for 127.0.0.1 at 2017-11-20 22:18:07 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"page"=>"9"}
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.6ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 80]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (43.2ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (48.1ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.9ms)
+Completed 200 OK in 227ms (Views: 216.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/site/livro_caixas?page=5" for 127.0.0.1 at 2017-11-20 22:18:09 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.4ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 40]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (27.0ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (29.4ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.1ms)
+Completed 200 OK in 250ms (Views: 242.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:18:10 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (16.5ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (18.8ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 192ms (Views: 184.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/site/livro_caixas/new" for 127.0.0.1 at 2017-11-20 22:18:13 -0200
+Processing by Site::LivroCaixasController#new as HTML
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/new.html.erb within layouts/site
+  [1m[36mTipoMovimentacao Load (0.5ms)[0m  [1m[34mSELECT "tipo_movimentacaos".* FROM "tipo_movimentacaos"[0m
+  Rendered site/livro_caixas/_form.html.erb (14.7ms)
+  Rendered site/livro_caixas/new.html.erb within layouts/site (17.1ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.8ms)
+Completed 200 OK in 153ms (Views: 146.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:18:16 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (26.1ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (29.2ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.0ms)
+Completed 200 OK in 284ms (Views: 274.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:18:16 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (21.6ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (22.9ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.8ms)
+Completed 200 OK in 268ms (Views: 264.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:18:17 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (19.2ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (20.6ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.0ms)
+Completed 200 OK in 320ms (Views: 313.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:18:17 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (22.6ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (23.8ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.8ms)
+Completed 200 OK in 250ms (Views: 246.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:18:17 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (26.6ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (27.8ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.9ms)
+Completed 200 OK in 217ms (Views: 212.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/site/livro_caixas?utf8=%E2%9C%93&data_inicio=&data_fim=&button=" for 127.0.0.1 at 2017-11-20 22:18:17 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"utf8"=>"✓", "data_inicio"=>"", "data_fim"=>"", "button"=>""}
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (4.8ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (34.5ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (40.0ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.9ms)
+Completed 200 OK in 238ms (Views: 230.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/site/livro_caixas?utf8=%E2%9C%93&data_inicio=&data_fim=&button=" for 127.0.0.1 at 2017-11-20 22:18:19 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"utf8"=>"✓", "data_inicio"=>"", "data_fim"=>"", "button"=>""}
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (35.7ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (40.3ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 216ms (Views: 204.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/site/livro_caixas/new" for 127.0.0.1 at 2017-11-20 22:18:21 -0200
+Processing by Site::LivroCaixasController#new as HTML
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/new.html.erb within layouts/site
+  [1m[36mTipoMovimentacao Load (0.7ms)[0m  [1m[34mSELECT "tipo_movimentacaos".* FROM "tipo_movimentacaos"[0m
+  Rendered site/livro_caixas/_form.html.erb (9.6ms)
+  Rendered site/livro_caixas/new.html.erb within layouts/site (11.8ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 168ms (Views: 159.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/site/livro_caixas?utf8=%E2%9C%93&data_inicio=&data_fim=&button=" for 127.0.0.1 at 2017-11-20 22:18:23 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"utf8"=>"✓", "data_inicio"=>"", "data_fim"=>"", "button"=>""}
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.7ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (20.7ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (23.6ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.0ms)
+Completed 200 OK in 264ms (Views: 255.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/site/livro_caixas?utf8=%E2%9C%93&data_inicio=&data_fim=&button=" for 127.0.0.1 at 2017-11-20 22:19:53 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"utf8"=>"✓", "data_inicio"=>"", "data_fim"=>"", "button"=>""}
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.1ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (23.0ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (24.9ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.8ms)
+Completed 200 OK in 223ms (Views: 218.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/site/livro_caixas?utf8=%E2%9C%93&data_inicio=&data_fim=&button=" for 127.0.0.1 at 2017-11-20 22:21:33 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"utf8"=>"✓", "data_inicio"=>"", "data_fim"=>"", "button"=>""}
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.4ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (14.5ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (15.7ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 162ms (Views: 158.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/site/livro_caixas?utf8=%E2%9C%93&data_inicio=&data_fim=&button=" for 127.0.0.1 at 2017-11-20 22:21:34 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"utf8"=>"✓", "data_inicio"=>"", "data_fim"=>"", "button"=>""}
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (47.6ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (51.5ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 207ms (Views: 198.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/site/nota_fiscal_entrada" for 127.0.0.1 at 2017-11-20 22:21:38 -0200
+Processing by Site::NotaFiscalEntradasController#index as HTML
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/nota_fiscal_entradas/index.html.erb within layouts/site
+  Rendered site/nota_fiscal_entradas/index.html.erb within layouts/site (0.4ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 127ms (Views: 124.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:21:40 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (24.1ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (27.5ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 162ms (Views: 152.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:21:42 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (32.1ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (35.8ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 180ms (Views: 169.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:23:53 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.8ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (42.7ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (48.4ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.2ms)
+Completed 200 OK in 203ms (Views: 193.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:23:56 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (32.8ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (37.2ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.8ms)
+Completed 200 OK in 205ms (Views: 194.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:24:02 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.4ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (26.6ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (32.5ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 198ms (Views: 186.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:24:17 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.7ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (19.3ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (20.9ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.8ms)
+Completed 200 OK in 167ms (Views: 162.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/site/livro_caixas?page=2" for 127.0.0.1 at 2017-11-20 22:24:22 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.2ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 10]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (27.4ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (29.7ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 182ms (Views: 174.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:24:25 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (0.8ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (26.0ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (28.4ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.2ms)
+Completed 200 OK in 267ms (Views: 259.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:36:54 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (33.2ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (40.6ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (0.7ms)
+Completed 200 OK in 191ms (Views: 181.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/site/livro_caixas" for 127.0.0.1 at 2017-11-20 22:38:07 -0200
+Processing by Site::LivroCaixasController#index as HTML
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = $1 ORDER BY "members"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering site/livro_caixas/index.html.erb within layouts/site
+  [1m[35mSQL (1.5ms)[0m  [1m[34mSELECT  "livro_caixas"."id" AS t0_r0, "livro_caixas"."created_at" AS t0_r1, "livro_caixas"."updated_at" AS t0_r2, "livro_caixas"."descricao" AS t0_r3, "livro_caixas"."situacao" AS t0_r4, "livro_caixas"."tipo_movimentacao_id" AS t0_r5, "livro_caixas"."valor_cents" AS t0_r6, "tipo_movimentacaos"."id" AS t1_r0, "tipo_movimentacaos"."nm_movimentacao" AS t1_r1, "tipo_movimentacaos"."tipo" AS t1_r2, "tipo_movimentacaos"."created_at" AS t1_r3, "tipo_movimentacaos"."updated_at" AS t1_r4 FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 ) ORDER BY livro_caixas.created_at LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "livro_caixas"."id") FROM "livro_caixas" LEFT OUTER JOIN "tipo_movimentacaos" ON "tipo_movimentacaos"."id" = "livro_caixas"."tipo_movimentacao_id" WHERE ( 1=1 )[0m
+  Rendered site/livro_caixas/_lista_grid.html.erb (29.7ms)
+  Rendered site/livro_caixas/index.html.erb within layouts/site (34.2ms)
+  Rendered layouts/site_shared/_navitagion.html.erb (1.0ms)
+Completed 200 OK in 193ms (Views: 183.7ms | ActiveRecord: 3.0ms)
+
+

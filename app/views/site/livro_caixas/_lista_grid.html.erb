@@ -12,7 +12,9 @@
 
     <% @registros_caixa.each do |registro| %>
         <tr>
-          <td><%= l(registro.created_at, format: :short) %></td>
+          <!--<td><%#= l(registro.created_at, format: :short) %></td>-->
+          <td><%= registro.created_at.strftime("%d/%m/%Y %H:%M") %></td>
+
           <!--<td><%#= Time.zone('-3').parse(registro.created_at.to_s) %></td>-->
 
           <td><%= registro.descricao %></td>
