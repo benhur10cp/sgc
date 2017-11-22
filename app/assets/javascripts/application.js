@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require tether
 //= require jquery_ujs
+//= require tether
 //= require bootstrap
 //= require bootstrap_sb_admin_base_v2
 //= require turbolinks
